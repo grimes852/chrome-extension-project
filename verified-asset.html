@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Security for everyone</title>
+
+    <link rel="stylesheet" href="mystyles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body {
+        width: 400px;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background: #fff;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <img
+        src="images/banner.png"
+        class="center"
+        alt="promo banner"
+        style="max-height: 55px; width: auto"
+      />
+    </div>
+    <div class="navbar">
+      <a href="#">
+        <button class="navbar-home">
+          <i class="fa fa-home" aria-hidden="true" style="color:white" ></i>Home
+        </button>
+      </a>
+      <a href="#">
+        <button class="navbar-scan">
+          <i class="fa fa-shield" aria-hidden="true" style="color:white" ></i>Scans
+        </button>
+      </a>
+      <a href="#">
+        <button id="verified-btn">
+          <i class="fa fa-user" aria-hidden="true" style="color:white" ></i>Assets
+        </button>
+      </a>
+
+      <a href="#">
+        <button type="submit" class="cikis">
+          <i class="fa fa-sign-out" aria-hidden="true"style="color:rgb(0, 0, 0)"></i>Sign Out
+        </button>
+      </a>
+    </div>
+
+
+    <form id="asset-form" style="padding: 0">
+      <label for="asset-input">
+        <p style="padding: 10px">Enter an asset:</p>
+      </label>
+      <input
+        type="text"
+        id="asset-input"
+        name="asset"
+        class="input-type"
+        placeholder="Asset URL"
+        style="width: 380px;";
+      />
+      <div>
+        <button type="submit" class="button" id="asset-add">Add asset</button>
+      </div>
+    </form>
+    <div>
+      <div class="btn-container">
+        <div>
+          <p>Select: </p>
+        </div>
+        <div>
+          <select name="asset-list" id="asset-list" class="input-type2"></select>
+        </div>
+      </div>
+    </div>
+    <div id="warning-message" style="display: none">
+     <p> Invalid URL. Please enter a valid URL. </p> 
+    </div>
+    <div>
+      <button class="button" id="scan-btn">Use this asset</button>
+    </div>
+    <div class="btn-container">
+      <button class="button" id="reset-btn">Reset all assets</button>
+
+      <button type="submit" class="button" id="reset-asset">
+        Copy active tab
+      </button>
+    </div>
+
+    <div>
+      <a href="https://securityforeveryone.com/" target="_blank"
+        ><button class="button">Visit our website</button></a
+      >
+    </div>
+
+    <script src="./verified-asset-script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+div {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+}
+#first {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+}
+#second {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+}
+i {
+  font-size: 1.3rem;
+  margin: 0 5px;
+  color: rgb(0, 0, 0);
+}
+body {
+  width: 400px;
+  height: 700px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #fff;
+  color: rgb(0, 0, 0);
+}
+form {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+}
+#notFound {
+  display: none;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%;
+  text-align: center;
+}
+
+.show-container-wrapper {
+  width: 100%;
+  background-color: rgb(226, 229, 222);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.show-container {
+  background-color: #2196f3;
+  padding: 5px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+  width: 100%;
+}
+b {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  width: 100%;
+}
+#asset-input {
+  width: 300px;
+  border: 1px solid black;
+  padding: 4px;
+}
+#asset-list {
+  width: 300px;
+  border: 1px solid black;
+  padding: 4px;
+}
+.btn-container {
+  background-color: rgb(239, 241, 235);
+  overflow: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+button {
+  font-size: 14px;
+  line-height: 14px;
+  background-color: #2196f3;
+  border-radius: 6px;
+  border: none;
+  letter-spacing: normal;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  transition-duration: 0.3s;
+  padding: 10px;
+  box-shadow: #2082d3 0px 0px 0px 0px, #2082d3 (0, 0, 0, 0.14) 0px 0px 0px 0px,
+    #2082d3 (0, 0, 0, 0.12) 0px 0px 0px 0px;
+}
+button:hover {
+  background-color: #2082d3;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+button:active {
+  background-color: #2082d3;
+  transition: all 0.3s ease;
+
+}
+.search-form {
+  position: relative;
+  width: 99%;
+  margin: 0 auto;
+}
+
+.search-input {
+  width: 98%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 18px;
+  text-align: center;
+}
+.suggestions option {
+  background: rgb(226, 229, 222);
+  list-style: none;
+  border-bottom: 2px solid #000000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.03);
+  margin: 0;
+  padding: 4px;
+  transition: background 0.2s;
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+  word-wrap: break-word;
+}
+.suggestions option:nth-child(even) {
+  background: #ffffff;
+}
+.suggestions option:nth-child(odd) {
+  background: #eceef0;
+  color: #000000;
+}
+.suggestions {
+  width: 600px;
+  overflow: auto;
+  max-height: 150px;
+  overflow-y: scroll;
+  transition: all 0.4s;
+  border-radius: 6px;
+  order: 1;
+  display: none;
+}
+.suggestions select {
+  -webkit-appearance: button;
+  appearance: button;
+}
+.navbar {
+  width: 100%;
+  padding: 9px;
+  background-color: rgb(226, 229, 222);
+  overflow: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+input {
+  display:block;
+  width:100%;
+  margin:10px 0;
+  padding:10px;
+  
+}
+.input-type {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 18px;
+  text-align: left;
+  
+}
+.input-type:hover {
+  border: 1px solid #aaa;
+}
+.input-type2 {
+  background: rgb(226, 229, 222);
+  list-style: none;
+  border-bottom: 2px solid #000000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.03);
+  margin: 0;
+  padding: 4px;
+  transition: background 0.2s;
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+  word-wrap: break-word;
+  
+}
+.input-type2 :nth-child(even) {
+  background: #ffffff;
+}
+.input-type2 :nth-child(odd) {
+  background: #eceef0;
+  color: #000000;
+}
+

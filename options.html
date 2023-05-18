@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Options</title>
+    <link rel="stylesheet" href="mystyles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body {
+        width: 400px;
+        height: 400px;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img
+        src="images/banner.png"
+        class="center"
+        alt="promo banner"
+        style="max-height: 55px; width: auto"
+      />
+    </div>
+    <div class="show-container-wrapper">
+      <div class="show-container">
+        <div class="center">
+          <label>
+            <b>Blog notification: </b>
+            <input type="checkbox" id="blog-notification" />
+          </label>
+        </div>
+        <div class="center">
+          <label>
+            <b>Tool notification: </b>
+            <input type="checkbox" id="tool-notification" />
+          </label>
+        </div>
+        <div class="center">
+          <label>
+            <b>Scan notification: </b>
+            <input type="checkbox" id="scan-notification" />
+          </label>
+        </div>
+      </div>
+    </div>
+    <div id="status" class="center"></div>
+    <div class="center">
+      <button id="save">Save</button>
+    </div>
+
+    <div>
+      <a href="https://securityforeveryone.com/" target="_blank"
+        ><button class="button">Visit our website</button></a
+      >
+    </div>
+    <script src="options.js"></script>
+  </body>
+</html>

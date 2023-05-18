@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Security for everyone</title>
+
+    <link rel="stylesheet" href="mystyles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body {
+        width: 400px;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background: #fff;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <img
+        src="images/banner.png"
+        class="center"
+        alt="promo banner"
+        style="max-height: 55px; width: auto"
+      />
+    </div>
+    <div class="show-container-wrapper" style="border-radius: 0">
+      <div
+        style="
+          justify-content: space-between;
+          overflow: auto;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+        "
+      >
+        <h4 style="display: inline-block; margin: 1px">API Token :</h4>
+        <input
+          type="text"
+          name="api-token"
+          id="api-token"
+          class="input-type"
+          placeholder="Your api token"
+          style="width: 270px"
+          style="padding: 0px"
+        />
+      </div>
+      <div>
+        <button type="submit" class="button" id="gir">Sign In</button>
+      </div>
+    </div>
+
+    <div class="center">
+      <p>
+        <a
+          href="https://app.securityforeveryone.com/help-center/api"
+          target="_blank"
+        >
+          <b class="fa fa-key" aria-hidden="true" style="color: black;" >What is API Token?</b>
+        </a>
+      </p>
+    </div>
+
+    <div id="warning-message" style="display: none">
+      Lütfen geçerli bir token giriniz.
+    </div>
+    <div>
+      <a href="https://securityforeveryone.com/" target="_blank">
+        <button class="button">Visit our website</button>
+      </a>
+    </div>
+    <script src="./popup-sign-in-script.js"></script>
+  </body>
+</html>
