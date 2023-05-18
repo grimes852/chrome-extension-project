@@ -20,7 +20,6 @@ cikis_buton.addEventListener("click", () => {
   window.location.replace("./popup-sign-in.html");
 });
 
-//autocompleteautocompleteautocompleteautocompleteautocompleteautocompleteautocomplete
 
 function findMatches(keyword, data) {
   const regex = new RegExp(keyword, "gi");
@@ -55,7 +54,7 @@ const suggestions = document.querySelector(".suggestions");
 
 searchInput.addEventListener("change", displayMatches);
 searchInput.addEventListener("keyup", displayMatches);
-//autocompleteautocompleteautocompleteautocompleteautocompleteautocompleteautocomplete
+
 const searchIn = document.querySelector(".search-input");
 const select = document.querySelector(".suggestions");
 

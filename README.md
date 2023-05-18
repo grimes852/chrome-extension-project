@@ -1,4 +1,4 @@
-# Security for Everyone Chrome Extension
+# S4 Chrome Extension
 
 ## Installation
 

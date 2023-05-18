@@ -18,14 +18,11 @@ cikis_buton.addEventListener("click", () => {
   chrome.storage.local.set({ apitoken: 0 }).then(() => {});
   window.location.replace("./popup-sign-in.html");
 });
-
 //scan sayfasına gidecek sonra
 navbar_scan_butonu.addEventListener("click", () => {
   window.location.replace("./free-popup-sign-out.html");
 });
-
 //asset add
-
 document.getElementById("asset-form").addEventListener("submit", function (e) {
   e.preventDefault(); // prevent form from submitting
 

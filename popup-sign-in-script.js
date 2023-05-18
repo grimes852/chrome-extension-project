@@ -1,9 +1,7 @@
-
-
 const giris_buton = document.querySelector("#gir");
 giris_buton.addEventListener("click", () => {
   let apitoken = document.querySelector("#api-token").value;
-  //apitoken localde kaydedildi
+
   isValidToken(apitoken);
 });
 

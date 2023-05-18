@@ -80,51 +80,5 @@ async function scan_function() {
     console.log(err);
   }
 }
-//birkaç kontrol kodu
-/* 
-//kaydedlmiş verilerin konsolda kontrölü için yazdım, geliştirme süreci bittiğinde kaldırabiliriz
-chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-  chrome.storage.local.get(["asseturl"]).then((result) => {
-    console.log(result.asseturl);
-  });
-  chrome.storage.local.get(["apitoken"]).then((result) => {
-    console.log(result.apitoken);
-  });
 
-  chrome.storage.local.get(["scan_aktive"]).then((result) => {
-    console.log(result.scan_aktive);
-  });
-
-  chrome.storage.local.get(["jobslug"], function (result) {
-    console.log(result.jobslug);
-  });
-});
-*/
-
-/* 
-chrome.runtime.onInstalled.addListener(deneme6);
-async function deneme6() {
-  try {
-    const response = await fetch(
-      "https://core.securityforeveryone.com/api/scans/list",
-      {
-        method: "POST",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          page: "1",
-          per_page: "10",
-          query: "Gen",
-        }),
-      }
-    );
-    const result = await response.json();
-    console.log(result);
-  } catch (err) {
-    console.log(err);
-  }
-}
-*/
 
